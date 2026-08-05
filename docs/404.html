@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v7.1.6"><meta name="description" content="This page is no longer available."><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#f3efe5"><meta property="og:type" content="website"><meta property="og:title" content="Page not found · Yusen Liu"><meta property="og:description" content="This page is no longer available."><meta property="og:url" content="https://yusen.website/404/"><meta property="og:site_name" content="Yusen Liu"><link rel="canonical" href="https://yusen.website/404/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Page not found · Yusen Liu</title><script>
+      const storedTheme = localStorage.getItem("theme");
+      const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script><link rel="stylesheet" href="/_astro/BaseLayout.DV9IkpgS.css"></head><body><main class="error-page"><div class="error-card"><p class="section-label">Error 404</p><h1>That page has<br><em>left the archive.</em></h1><p>The address may be outdated, or the page may have moved.</p><a class="button button-primary" href="/">Return home</a></div></main><script>
+      const toggle = document.querySelector("[data-theme-toggle]");
+      const setLabel = () => {
+        const isDark = document.documentElement.dataset.theme === "dark";
+        toggle?.setAttribute("aria-label", isDark ? "Use light theme" : "Use dark theme");
+        toggle?.setAttribute("title", isDark ? "Use light theme" : "Use dark theme");
+      };
+
+      setLabel();
+      toggle?.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem("theme", nextTheme);
+        setLabel();
+      });
+    </script></body></html>
