@@ -40,12 +40,28 @@ params:
   ShowToc: false
   comments: false
   math: false
-  profile:
-    initials: YL
-    role: Researcher
-    location: Sydney, Australia
-    summary: "Learning systems · Optimization · Applied AI"
-    github: "https://github.com/YusenL"
+  profileMode:
+    enabled: true
+    title: Yusen Liu
+    subtitle: "I am a researcher based in Sydney. My work spans machine learning, optimization, and applied AI, with an emphasis on reliable methods for complex real-world systems."
+    imageUrl: profile.svg
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: Yusen Liu
+    buttons:
+      - name: About
+        url: "#about"
+      - name: Research
+        url: "#research"
+      - name: Publications
+        url: "#publications"
+      - name: Contact
+        url: "#contact"
+  socialIcons:
+    - name: Location
+      url: "#contact"
+    - name: GitHub
+      url: "https://github.com/YusenL"
   schema:
     publisherType: Person
     sameAs:

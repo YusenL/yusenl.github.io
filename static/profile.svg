@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <circle cx="80" cy="80" r="79" fill="#f1f2f3" stroke="#d6d8da"/>
+  <circle cx="80" cy="80" r="58" fill="none" stroke="#dfe1e3" stroke-dasharray="2 5"/>
+  <text x="80" y="91" text-anchor="middle" fill="#34383c" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="600" letter-spacing="-2">YL</text>
+</svg>

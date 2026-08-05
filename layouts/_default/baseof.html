@@ -3,8 +3,8 @@
   <head>
     {{- partial "head.html" . }}
   </head>
-  <body class="{{ if .IsHome }}home-page{{ else }}list{{ end }}" id="top">
-    {{- partial "header.html" . }}
+  <body class="{{ if .IsHome }}list home-page{{ else }}list{{ end }}" id="top">
+    {{- if not .IsHome }}{{ partial "header.html" . }}{{ end }}
     <main class="main">
       {{- block "main" . }}{{ end }}
     </main>
