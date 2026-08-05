@@ -56,6 +56,41 @@ body.home-page {
   color: var(--content);
 }
 
+.profile .research-interests {
+  margin-top: 3px;
+  color: var(--content);
+}
+
+.profile .research-interests h2 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.profile .research-interests ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  font-size: 15px;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.profile .research-interests li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.profile .research-interests li:not(:last-child)::after {
+  margin: 0 8px;
+  color: var(--tertiary);
+  content: "·";
+}
+
 .profile img {
   background: var(--theme);
 }
@@ -190,6 +225,19 @@ body.home-page {
     overflow-wrap: anywhere;
   }
 
+  .profile .research-interests {
+    width: 100%;
+  }
+
+  .profile .research-interests ul {
+    gap: 2px 0;
+    font-size: 14px;
+  }
+
+  .profile .research-interests li {
+    flex: 0 0 auto;
+  }
+
   .profile img {
     width: 132px;
     height: 132px;
@@ -199,6 +247,16 @@ body.home-page {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .profile .button {
+    margin: 0;
+    padding: 8px 10px;
+  }
+
+  .profile .button-inner {
+    padding: 0;
   }
 
   .academic-sections {

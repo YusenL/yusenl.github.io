@@ -10,17 +10,17 @@ disableKinds: [taxonomy, term, RSS]
 
 menu:
   main:
-    - name: About
-      url: "#about"
+    - name: Research Interests
+      url: "#research-interests"
       weight: 1
-    - name: Research
-      url: "#research"
+    - name: News
+      url: "#news"
       weight: 2
     - name: Publications
       url: "#publications"
       weight: 3
-    - name: Contact
-      url: "#contact"
+    - name: Services
+      url: "#services"
       weight: 4
 
 params:
@@ -43,24 +43,33 @@ params:
   profileMode:
     enabled: true
     title: Yusen Liu
-    subtitle: "I am a researcher based in Sydney. My work spans machine learning, optimization, and applied AI, with an emphasis on reliable methods for complex real-world systems."
+    subtitle: "A researcher based in Sydney, working on reliable methods for complex real-world systems."
     imageUrl: profile.svg
     imageWidth: 160
     imageHeight: 160
     imageTitle: Yusen Liu
+    researchInterests:
+      - Machine Learning
+      - Optimization
+      - Applied AI
     buttons:
-      - name: About
-        url: "#about"
-      - name: Research
-        url: "#research"
+      - name: Research Interests
+        url: "#research-interests"
+      - name: News
+        url: "#news"
       - name: Publications
         url: "#publications"
-      - name: Contact
-        url: "#contact"
+      - name: Services
+        url: "#services"
   socialIcons:
-    - name: Location
-      url: "#contact"
+    - name: Email
+      title: Email
+      url: "mailto:liuyusen96@gmail.com"
+    - name: Google Scholar
+      title: Google Scholar
+      url: "https://scholar.google.com/citations?view_op=search_authors&mauthors=Yusen+Liu"
     - name: GitHub
+      title: GitHub
       url: "https://github.com/YusenL"
   schema:
     publisherType: Person
