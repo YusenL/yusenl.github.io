@@ -1,0 +1,24 @@
+{{- define "main" }}
+<div class="academic-home">
+  <aside class="profile-column" aria-label="Profile">
+    <div class="profile-monogram" aria-hidden="true">{{ site.Params.profile.initials }}</div>
+    <h1>{{ site.Title }}</h1>
+    <p class="profile-role">{{ site.Params.profile.role }}</p>
+    <p class="profile-summary">{{ site.Params.profile.summary }}</p>
+    <dl class="profile-meta">
+      <div>
+        <dt>Based in</dt>
+        <dd>{{ site.Params.profile.location }}</dd>
+      </div>
+      <div>
+        <dt>Online</dt>
+        <dd><a href="{{ site.Params.profile.github }}" rel="noreferrer" target="_blank">GitHub ↗</a></dd>
+      </div>
+    </dl>
+  </aside>
+
+  <article class="academic-content">
+    {{ .Content }}
+  </article>
+</div>
+{{- end }}

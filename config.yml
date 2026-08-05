@@ -1,0 +1,71 @@
+baseURL: "https://yusen.website/"
+title: Yusen Liu
+theme: PaperMod
+locale: en
+defaultContentLanguage: en
+publishDir: docs
+cleanDestinationDir: true
+enableRobotsTXT: false
+disableKinds: [taxonomy, term, RSS]
+
+menu:
+  main:
+    - name: About
+      url: "#about"
+      weight: 1
+    - name: Research
+      url: "#research"
+      weight: 2
+    - name: Publications
+      url: "#publications"
+      weight: 3
+    - name: Contact
+      url: "#contact"
+      weight: 4
+
+params:
+  description: "The personal research website of Yusen Liu, a researcher based in Sydney."
+  author: Yusen Liu
+  DateFormat: "January 2006"
+  defaultTheme: light
+  disableThemeToggle: true
+  hideFooter: false
+  disableScrollToTop: true
+  disableAnchoredHeadings: true
+  ShowShareButtons: false
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowToc: false
+  comments: false
+  math: false
+  profile:
+    initials: YL
+    role: Researcher
+    location: Sydney, Australia
+    summary: "Learning systems · Optimization · Applied AI"
+    github: "https://github.com/YusenL"
+  schema:
+    publisherType: Person
+    sameAs:
+      - "https://github.com/YusenL"
+  assets:
+    disableScrollBarStyle: true
+    favicon: favicon.svg
+    favicon16x16: favicon.svg
+    favicon32x32: favicon.svg
+    apple_touch_icon: favicon.svg
+    theme_color: "#ffffff"
+  label:
+    text: Yusen Liu
+  footer:
+    text: "Research profile in progress"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn

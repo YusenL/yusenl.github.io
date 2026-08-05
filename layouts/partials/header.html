@@ -1,0 +1,10 @@
+<header class="header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="site-name" href="/" aria-label="Yusen Liu, home">{{ site.Title }}</a>
+    <ul id="menu">
+      {{- range site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>
