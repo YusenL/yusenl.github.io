@@ -6,15 +6,11 @@ robotsNoIndex: true
 
 <h2 id="about-me" data-en="About Me" data-zh="关于我">About Me</h2>
 
-<p data-en="I am a PhD student in Computer Science at the University of Technology Sydney. My research focuses on deep learning for language and multimodal generation." data-zh="我是悉尼科技大学（UTS）计算机科学博士研究生，研究聚焦于面向语言与多模态生成的深度学习方法。">I am a PhD student in Computer Science at the University of Technology Sydney. My research focuses on deep learning for language and multimodal generation.</p>
+<p data-en="I am a PhD student in Computer Science at the University of Technology Sydney, where I have been pursuing my doctorate since 2023. My research focuses on deep learning for language and multimodal generation." data-zh="我是悉尼科技大学（UTS）计算机科学博士研究生，自2023年起在此攻读博士学位。我的研究聚焦于面向语言与多模态生成的深度学习方法。">I am a PhD student in Computer Science at the University of Technology Sydney, where I have been pursuing my doctorate since 2023. My research focuses on deep learning for language and multimodal generation.</p>
 
-<h3 data-en="Research Interests" data-zh="研究兴趣">Research Interests</h3>
+<h2 id="research-interests" data-en="Research Interests" data-zh="研究兴趣">Research Interests</h2>
 
 <p data-en="Deep Learning · Natural Language Generation · Multimodal Learning" data-zh="深度学习 · 自然语言生成 · 多模态学习">Deep Learning · Natural Language Generation · Multimodal Learning</p>
-
-<h2 id="education" data-en="Education" data-zh="教育经历">Education</h2>
-
-<p><strong data-en="University of Technology Sydney" data-zh="悉尼科技大学">University of Technology Sydney</strong><br><span data-en="PhD Student, Computer Science" data-zh="计算机科学博士研究生">PhD Student, Computer Science</span><br><span data-en="2023 – Present" data-zh="2023年至今">2023 – Present</span></p>
 
 <h2 id="news" data-en="News" data-zh="动态">News</h2>
 
