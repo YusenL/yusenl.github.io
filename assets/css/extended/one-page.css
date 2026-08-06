@@ -1,6 +1,6 @@
 :root {
-  --main-width: 720px;
-  --nav-width: 1024px;
+  --main-width: 1180px;
+  --nav-width: 1180px;
   --header-height: 60px;
   --footer-height: 60px;
   --radius: 8px;
@@ -16,262 +16,358 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 24px;
+  scroll-padding-top: calc(var(--header-height) + 28px);
 }
 
 body.home-page {
   background: var(--code-bg);
 }
 
-.home-page .main {
-  width: min(calc(var(--main-width) + var(--gap) * 2), 100%);
-  max-width: none;
-  min-height: calc(100vh - var(--footer-height));
-  margin-inline: auto;
-  padding: 0 var(--gap) 88px;
+.header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  border-bottom: 1px solid var(--border);
+  background: rgba(245, 245, 245, 0.94);
+  backdrop-filter: blur(12px);
 }
 
-.home-page .main .profile {
-  min-height: calc(100vh - var(--footer-height) - (var(--gap) * 2));
-  padding: var(--gap) 0;
-  font-size: var(--homesize);
-  line-height: var(--lineheight);
-}
-
-.profile .profile_inner {
+.header .nav {
   width: 100%;
-  max-width: var(--main-width);
-}
-
-.profile .profile_inner h1 {
-  margin: 0;
-  color: var(--primary);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.profile .profile_inner > span {
-  color: var(--content);
-}
-
-.profile .research-interests {
-  margin-top: 3px;
-  color: var(--content);
-}
-
-.profile .research-interests h2 {
-  margin: 0 0 4px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.profile .research-interests ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  color: var(--secondary);
-  font-size: 15px;
-  line-height: 1.5;
-  list-style: none;
-}
-
-.profile .research-interests li {
-  display: inline-flex;
+  max-width: var(--nav-width);
+  min-height: var(--header-height);
+  padding: 0 24px;
   align-items: center;
+  background: transparent;
 }
 
-.profile .research-interests li:not(:last-child)::after {
-  margin: 0 8px;
-  color: var(--tertiary);
-  content: "·";
-}
-
-.profile img {
-  background: var(--theme);
-}
-
-.profile .social-icons {
-  margin-top: 3px;
-}
-
-.profile .social-icons a {
-  padding-right: 14px;
-}
-
-.profile .social-icons a svg {
-  width: 30px;
-  height: 30px;
-}
-
-.profile .buttons {
-  margin-top: 3px;
-}
-
-.profile .button {
-  margin: 6px 12px 6px 0;
-  padding: 10px;
-  border-radius: var(--radius);
+.header .site-name {
   color: var(--primary);
-  background: var(--tertiary);
-  transition: background-color 0.15s ease, transform 0.1s ease;
-}
-
-.profile .button:hover {
-  background: rgb(198, 198, 198);
-}
-
-.profile .button:active {
-  transform: scale(0.97);
-}
-
-.academic-sections {
-  padding-top: 72px;
-  border-top: 1px solid var(--tertiary);
-  color: var(--content);
-}
-
-.academic-sections h2 {
-  scroll-margin-top: 24px;
-  margin: 64px 0 20px;
-  color: var(--primary);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.015em;
 }
 
-.academic-sections h2:first-child {
+.header #menu {
+  margin: 0;
+  align-items: center;
+}
+
+.header #menu li + li {
+  margin-inline-start: 24px;
+}
+
+.header #menu a {
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.header #menu a:hover {
+  color: var(--primary);
+}
+
+.home-page .main {
+  width: 100%;
+  max-width: var(--main-width);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  margin-inline: auto;
+  padding: 56px 24px 88px;
+}
+
+.academic-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: clamp(44px, 6vw, 72px);
+  align-items: start;
+}
+
+.profile-sidebar {
+  min-width: 0;
+}
+
+.profile-card {
+  position: sticky;
+  top: calc(var(--header-height) + 40px);
+  padding: 28px 24px 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--theme);
+  box-shadow: 0 8px 24px rgba(30, 30, 30, 0.06);
+  text-align: center;
+}
+
+.profile-card-image {
+  display: block;
+  width: 148px;
+  height: 148px;
+  margin: 0 auto 20px;
+  border: 1px solid var(--tertiary);
+  border-radius: 50%;
+  background: var(--theme);
+}
+
+.profile-card h1 {
+  margin: 0;
+  color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.profile-card-position {
+  margin: 10px 0 0;
+  color: var(--content);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-card-affiliation {
+  margin: 6px 0 0;
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.profile-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.profile-card .social-icons a {
+  display: inline-flex;
+  padding: 5px;
+  color: var(--primary);
+}
+
+.profile-card .social-icons a:hover {
+  color: var(--secondary);
+}
+
+.profile-card .social-icons svg {
+  width: 28px;
+  height: 28px;
+}
+
+.profile-card .buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  max-width: none;
+  margin-top: 18px;
+}
+
+.profile-card .button {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  color: var(--primary);
+  background: var(--tertiary);
+  font-size: 14px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.profile-card .button:hover {
+  background: rgb(198, 198, 198);
+}
+
+.profile-card .button:active {
+  transform: scale(0.98);
+}
+
+.profile-card .button-inner {
+  padding: 0;
+}
+
+.academic-content {
+  min-width: 0;
+  max-width: none;
+  color: var(--content);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.academic-content h2 {
+  position: relative;
+  scroll-margin-top: calc(var(--header-height) + 28px);
+  margin: 54px 0 20px;
+  padding-left: 16px;
+  color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.academic-content h2:first-child {
   margin-top: 0;
 }
 
-.academic-sections p,
-.academic-sections li {
-  font-size: 16px;
-  line-height: 1.7;
+.academic-content h2::before {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--primary);
+  content: "";
 }
 
-.academic-sections ul {
-  margin: 20px 0 0;
+.academic-content h2:not(:first-child)::after {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  left: 0;
+  border-top: 1px solid var(--tertiary);
+  content: "";
+}
+
+.academic-content h3 {
+  margin: 24px 0 6px;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.academic-content p {
+  margin: 0 0 16px;
+}
+
+.academic-content h3 + p {
+  color: var(--secondary);
+}
+
+.academic-content ul {
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.academic-sections li {
+.academic-content li {
   margin: 0 0 12px;
-  padding: 18px 20px;
+  padding: 16px 18px;
   border-radius: var(--radius);
   background: var(--theme);
 }
 
-.academic-sections strong {
+.academic-content strong {
   color: var(--primary);
 }
 
-.academic-sections a {
+.academic-content a {
   color: var(--primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-#publications + p {
-  padding: 20px;
+#education + p,
+#publications + p,
+#services + p {
+  padding: 18px 20px;
   border-radius: var(--radius);
   background: var(--theme);
 }
 
 .footer {
+  border-top: 1px solid var(--border);
   background: var(--code-bg);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   html,
   body {
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  .home-page .main {
-    width: 100%;
+  .header .nav {
+    flex-wrap: nowrap;
     padding-inline: 20px;
   }
 
-  .home-page .main .profile {
-    width: 100%;
-    min-width: 0;
-    min-height: calc(100svh - var(--footer-height) - 40px);
-    padding-block: 40px;
-  }
-
-  .profile .profile_inner {
-    width: calc(100vw - 40px);
-    min-width: 0;
-    max-width: calc(100vw - 40px);
-  }
-
-  .profile .profile_inner h1 {
-    font-size: 2rem;
-  }
-
-  .profile .profile_inner > span {
-    width: 100%;
-    max-width: 100%;
-    font-size: 16px;
-    overflow-wrap: anywhere;
-  }
-
-  .profile .research-interests {
-    width: 100%;
-  }
-
-  .profile .research-interests ul {
-    gap: 2px 0;
-    font-size: 14px;
-  }
-
-  .profile .research-interests li {
+  .header .site-name {
     flex: 0 0 auto;
   }
 
-  .profile img {
-    width: 132px;
-    height: 132px;
-  }
-
-  .profile .buttons {
-    width: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .profile .button {
-    margin: 0;
-    padding: 8px 10px;
-  }
-
-  .profile .button-inner {
-    padding: 0;
-  }
-
-  .academic-sections {
-    width: 100%;
+  .header #menu {
     min-width: 0;
-    padding-top: 56px;
+    margin-left: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
 
-  .academic-sections h2 {
-    margin-top: 52px;
-    font-size: 27px;
+  .header #menu::-webkit-scrollbar {
+    display: none;
   }
 
-  .academic-sections p,
-  .academic-sections li {
+  .header #menu li + li {
+    margin-inline-start: 18px;
+  }
+
+  .home-page .main {
+    padding: 36px 20px 72px;
+  }
+
+  .academic-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 42px;
+  }
+
+  .profile-card {
+    position: static;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .profile-card .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile-card .button {
+    padding-inline: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header .site-name {
+    font-size: 16px;
+  }
+
+  .header #menu a {
+    font-size: 13px;
+  }
+
+  .home-page .main {
+    padding-top: 28px;
+  }
+
+  .profile-card {
+    padding: 24px 20px;
+    box-shadow: none;
+  }
+
+  .profile-card-image {
+    width: 124px;
+    height: 124px;
+  }
+
+  .profile-card h1 {
+    font-size: 28px;
+  }
+
+  .academic-content h2 {
+    margin-top: 48px;
+    font-size: 24px;
+  }
+
+  .academic-content p,
+  .academic-content li {
     overflow-wrap: anywhere;
   }
 }

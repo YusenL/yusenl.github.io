@@ -1,6 +1,8 @@
 {{- define "main" }}
-  {{- partial "index_profile.html" . }}
-  <article class="post-content academic-sections">
-    {{ .Content }}
-  </article>
+  <div class="academic-layout">
+    {{- partial "profile_card.html" . }}
+    <article class="post-content academic-content">
+      {{ .Content }}
+    </article>
+  </div>
 {{- end }}
