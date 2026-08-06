@@ -250,7 +250,7 @@ body.dark .profile-card-image {
   scroll-margin-top: calc(var(--header-height) + 28px);
   margin: 54px 0 20px;
   padding-left: 16px;
-  color: var(--primary);
+  color: var(--accent);
   font-family: var(--font-sans);
   font-size: 22px;
   font-weight: 700;
