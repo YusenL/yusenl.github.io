@@ -11,27 +11,42 @@ disableKinds: [taxonomy, term, RSS]
 menu:
   main:
     - name: About
+      identifier: about
       url: "#about-me"
       weight: 1
+      params:
+        zh: 关于
     - name: Education
+      identifier: education
       url: "#education"
       weight: 2
+      params:
+        zh: 教育
     - name: News
+      identifier: news
       url: "#news"
       weight: 3
+      params:
+        zh: 动态
     - name: Publications
+      identifier: publications
       url: "#publications"
       weight: 4
+      params:
+        zh: 论文
     - name: Services
+      identifier: services
       url: "#services"
       weight: 5
+      params:
+        zh: 服务
 
 params:
   description: "The personal research website of Yusen Liu, a PhD student in Computer Science at the University of Technology Sydney."
   author: Yusen Liu
   DateFormat: "January 2006"
   defaultTheme: light
-  disableThemeToggle: true
+  disableThemeToggle: false
   hideFooter: false
   disableScrollToTop: true
   disableAnchoredHeadings: true
@@ -47,7 +62,9 @@ params:
     enabled: true
     title: Yusen Liu
     position: PhD Student
+    positionZh: 博士研究生
     affiliation: University of Technology Sydney
+    affiliationZh: 悉尼科技大学
     subtitle: "I am a PhD student in Computer Science at the University of Technology Sydney. My research focuses on deep learning for language and multimodal generation."
     imageUrl: profile.svg
     imageWidth: 160
@@ -81,9 +98,6 @@ params:
     theme_color: "#ffffff"
   label:
     text: Yusen Liu
-  footer:
-    text: "Research profile in progress"
-
 markup:
   goldmark:
     renderer:

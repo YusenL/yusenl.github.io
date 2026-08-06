@@ -104,8 +104,22 @@
 <noscript>
     <style>
         #theme-toggle,
+        #language-toggle,
+        #menu-toggle,
         .top-link {
             display: none;
+        }
+
+        @media (max-width: 820px) {
+            .header #menu {
+                position: static;
+                display: flex;
+                padding-inline: 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+                border-bottom: 0;
+                background: transparent;
+            }
         }
 
     </style>
@@ -152,4 +166,3 @@
 {{ if or .Page.Params.math .Site.Params.math }}
 {{- partial "math.html" .}}
 {{ end }} 
-
