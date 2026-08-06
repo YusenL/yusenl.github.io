@@ -4,15 +4,15 @@ description: The personal research website of Yusen Liu, a Ph.D. student in Comp
 robotsNoIndex: true
 ---
 
-<h2 id="about-me" data-en="About Me" data-zh="关于我">About Me</h2>
+<h2 id="about-me" data-en="About Me 👋" data-zh="关于我 👋">About Me 👋</h2>
 
 <p data-en="I am a Ph.D. student in Computer Science at the University of Technology Sydney, where I have been pursuing my doctorate since 2023. I received a Master's degree in Computer Science from Sichuan University (2018–2021) and a Bachelor's degree in Software Engineering from Tianjin University (2014–2018). Before joining UTS, I worked in Resource Information Management at the West China School of Stomatology, Sichuan University (2021–2023)." data-zh="我是悉尼科技大学（UTS）计算机科学博士研究生，自2023年起攻读博士学位。我于2018至2021年在四川大学获得计算机科学硕士学位，并于2014至2018年在天津大学获得软件工程学士学位。加入UTS之前，我于2021至2023年在四川大学华西口腔医学院从事资源信息管理工作。">I am a Ph.D. student in Computer Science at the University of Technology Sydney, where I have been pursuing my doctorate since 2023. I received a Master's degree in Computer Science from Sichuan University (2018–2021) and a Bachelor's degree in Software Engineering from Tianjin University (2014–2018). Before joining UTS, I worked in Resource Information Management at the West China School of Stomatology, Sichuan University (2021–2023).</p>
 
-<h2 id="research-interests" data-en="Research Interests" data-zh="研究兴趣">Research Interests</h2>
+<h2 id="research-interests" data-en="Research Interests 🔬" data-zh="研究兴趣 🔬">Research Interests 🔬</h2>
 
 <p data-en="Artificial Intelligence · Data Mining · Internet of Things · Time-Series Modeling · Multimodal Learning · AI for Dentistry" data-zh="人工智能 · 数据挖掘 · 物联网 · 时间序列建模 · 多模态学习 · 口腔医学人工智能">Artificial Intelligence · Data Mining · Internet of Things · Time-Series Modeling · Multimodal Learning · AI for Dentistry</p>
 
-<h2 id="news" data-en="News" data-zh="动态">News</h2>
+<h2 id="news" data-en="News ✨" data-zh="动态 ✨">News ✨</h2>
 
 <ul class="news-list">
   <li><strong>2026</strong><span aria-hidden="true"> — </span><span data-en="Three papers were accepted at ACM SIGKDD, ACM Multimedia, and IJCAI." data-zh="三篇论文被 ACM SIGKDD、ACM Multimedia 和 IJCAI 接收。">Three papers were accepted at ACM SIGKDD, ACM Multimedia, and IJCAI.</span></li>
@@ -20,7 +20,7 @@ robotsNoIndex: true
   <li><strong>2025</strong><span aria-hidden="true"> — </span><span data-en="Research on causal discovery and wind-turbine blade icing detection was published at PAKDD and in IEEE Sensors Journal." data-zh="时间序列因果发现与风机叶片结冰检测研究分别发表于 PAKDD 和 IEEE Sensors Journal。">Research on causal discovery and wind-turbine blade icing detection was published at PAKDD and in IEEE Sensors Journal.</span></li>
 </ul>
 
-<h2 id="publications" data-en="Publications" data-zh="论文">Publications</h2>
+<h2 id="publications" data-en="Publications 📚" data-zh="论文 📚">Publications 📚</h2>
 
 <ol class="publication-list">
   <li class="publication-item">
@@ -97,6 +97,6 @@ robotsNoIndex: true
 
 <p class="scholar-profile-link"><a href="https://scholar.google.com/citations?user=K_Fy2OUAAAAJ" rel="noopener noreferrer" target="_blank" data-en="View all on Google Scholar →" data-zh="在 Google Scholar 查看全部 →">View all on Google Scholar →</a></p>
 
-<h2 id="services" data-en="Services" data-zh="学术服务">Services</h2>
+<h2 id="services" data-en="Services 🤝" data-zh="学术服务 🤝">Services 🤝</h2>
 
 <p data-en="Reviewer for ACM SIGKDD, The Web Conference (WWW), AAAI, IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Industrial Informatics (TII), IEEE Transactions on Artificial Intelligence (TAI), IEEE Internet of Things Journal (IoTJ), and IEEE Sensors Journal." data-zh="担任 ACM SIGKDD、The Web Conference（WWW）、AAAI、IEEE Transactions on Neural Networks and Learning Systems（TNNLS）、IEEE Transactions on Industrial Informatics（TII）、IEEE Transactions on Artificial Intelligence（TAI）、IEEE Internet of Things Journal（IoTJ）及 IEEE Sensors Journal 审稿人。">Reviewer for ACM SIGKDD, The Web Conference (WWW), AAAI, IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Industrial Informatics (TII), IEEE Transactions on Artificial Intelligence (TAI), IEEE Internet of Things Journal (IoTJ), and IEEE Sensors Journal.</p>

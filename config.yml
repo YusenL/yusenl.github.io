@@ -65,8 +65,8 @@ params:
     positionZh: 计算机科学博士研究生
     affiliation: School of Computer Science, UTS
     affiliationZh: 悉尼科技大学计算机科学学院
-    location: Sydney, Australia
-    locationZh: 澳大利亚悉尼
+    location: 📍 Sydney, Australia
+    locationZh: 📍 澳大利亚悉尼
     subtitle: "I am a Ph.D. student in Computer Science at the University of Technology Sydney. My research focuses on time-series modeling, multimodal learning, and data-centric AI."
     imageUrl: profile.svg
     imageWidth: 160
