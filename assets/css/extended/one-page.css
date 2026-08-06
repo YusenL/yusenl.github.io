@@ -372,6 +372,54 @@ body.dark .profile-card-image {
   line-height: 1.4;
 }
 
+.academic-content .publication-tag.tag-author {
+  border-color: rgba(62, 94, 128, 0.22);
+  background: rgba(62, 94, 128, 0.07);
+  color: rgb(62, 94, 128);
+}
+
+.academic-content .publication-tag.tag-ccf {
+  border-color: rgba(147, 79, 56, 0.22);
+  background: rgba(147, 79, 56, 0.07);
+  color: rgb(147, 79, 56);
+}
+
+.academic-content .publication-tag.tag-core {
+  border-color: rgba(100, 80, 143, 0.22);
+  background: rgba(100, 80, 143, 0.07);
+  color: rgb(100, 80, 143);
+}
+
+.academic-content .publication-tag.tag-journal {
+  border-color: rgba(43, 112, 90, 0.22);
+  background: rgba(43, 112, 90, 0.07);
+  color: rgb(43, 112, 90);
+}
+
+body.dark .academic-content .publication-tag.tag-author {
+  border-color: rgba(169, 199, 227, 0.26);
+  background: rgba(169, 199, 227, 0.08);
+  color: rgb(169, 199, 227);
+}
+
+body.dark .academic-content .publication-tag.tag-ccf {
+  border-color: rgba(224, 173, 145, 0.26);
+  background: rgba(224, 173, 145, 0.08);
+  color: rgb(224, 173, 145);
+}
+
+body.dark .academic-content .publication-tag.tag-core {
+  border-color: rgba(198, 175, 233, 0.26);
+  background: rgba(198, 175, 233, 0.08);
+  color: rgb(198, 175, 233);
+}
+
+body.dark .academic-content .publication-tag.tag-journal {
+  border-color: rgba(143, 210, 180, 0.26);
+  background: rgba(143, 210, 180, 0.08);
+  color: rgb(143, 210, 180);
+}
+
 .academic-content .scholar-profile-link {
   margin: 4px 0 16px;
   font-size: 13px;
@@ -383,6 +431,45 @@ body.dark .profile-card-image {
 
 .academic-content strong {
   color: var(--primary);
+}
+
+.academic-content .research-list {
+  margin-top: 4px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.academic-content .research-list li {
+  padding: 0 0 10px;
+}
+
+.academic-content .news-list {
+  margin-top: 4px;
+}
+
+.academic-content .news-list li {
+  padding-bottom: 10px;
+}
+
+.academic-content .service-heading {
+  margin: 18px 0 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.academic-content .service-list {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.academic-content .service-list li {
+  padding: 0 0 6px;
+}
+
+.academic-content .service-list a {
+  color: var(--content);
 }
 
 .academic-content a {

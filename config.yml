@@ -42,7 +42,7 @@ menu:
         zh: 服务
 
 params:
-  description: "The personal research website of Yusen Liu, a Ph.D. student in Computer Science at the University of Technology Sydney, working on time-series modeling, multimodal learning, and data-centric AI."
+  description: "The personal research website of Yusen Liu, a Ph.D. student in Computer Science at the University of Technology Sydney, working on time-series data mining, multimodal learning, and AI for dentistry."
   author: Yusen Liu
   DateFormat: "January 2006"
   defaultTheme: light
@@ -65,18 +65,15 @@ params:
     positionZh: 计算机科学博士研究生
     affiliation: School of Computer Science, UTS
     affiliationZh: 悉尼科技大学计算机科学学院
-    location: 📍 Sydney, Australia
-    locationZh: 📍 澳大利亚悉尼
-    subtitle: "I am a Ph.D. student in Computer Science at the University of Technology Sydney. My research focuses on time-series modeling, multimodal learning, and data-centric AI."
+    location: Sydney, Australia
+    locationZh: 澳大利亚悉尼
+    subtitle: "I am a Ph.D. student in Computer Science at the University of Technology Sydney. My research focuses on time-series data mining, multimodal learning, and AI for dentistry."
     imageUrl: profile.svg
     imageWidth: 160
     imageHeight: 160
     imageTitle: Yusen Liu
     researchInterests:
-      - Artificial Intelligence
-      - Data Mining
-      - Internet of Things
-      - Time-Series Modeling
+      - Time-Series Data Mining
       - Multimodal Learning
       - AI for Dentistry
   socialIcons:
