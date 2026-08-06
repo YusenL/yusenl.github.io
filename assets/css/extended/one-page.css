@@ -335,26 +335,21 @@ body.dark .profile-card-image {
   color: var(--content);
 }
 
-.academic-content .publication-links {
+.academic-content .publication-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin: 10px 0 0;
 }
 
-.academic-content .publication-links a {
-  padding: 2px 8px;
-  border: 1px solid var(--tertiary);
+.academic-content .publication-tag {
+  padding: 3px 8px;
+  border: 1px solid var(--border);
   border-radius: 5px;
-  box-shadow: none;
+  background: var(--entry);
   color: var(--secondary);
   font-size: 12px;
-  text-decoration: none;
-}
-
-.academic-content .publication-links a:hover {
-  border-color: var(--secondary);
-  color: var(--primary);
+  line-height: 1.4;
 }
 
 .academic-content .scholar-profile-link {

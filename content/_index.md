@@ -25,20 +25,20 @@ robotsNoIndex: true
     <h3 class="publication-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/7100" rel="noopener noreferrer" target="_blank">Deep Poetry: A Chinese Classical Poetry Generation System</a></h3>
     <p class="publication-authors"><strong>Yusen Liu</strong>, Dayiheng Liu, Jiancheng Lv</p>
     <p class="publication-venue" data-en="Proceedings of the AAAI Conference on Artificial Intelligence, 34(09), 13626–13627, 2020." data-zh="AAAI 人工智能会议论文集，第34卷第9期，13626–13627页，2020年。">Proceedings of the AAAI Conference on Artificial Intelligence, 34(09), 13626–13627, 2020.</p>
-    <p class="publication-links">
-      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/7100" rel="noopener noreferrer" target="_blank" data-en="Paper" data-zh="论文">Paper</a>
-      <a href="https://arxiv.org/abs/1911.08212" rel="noopener noreferrer" target="_blank">arXiv</a>
-      <a href="/bib/deep-poetry.bib">BibTeX</a>
+    <p class="publication-tags" aria-label="Publication attributes">
+      <span class="publication-tag">First Author</span>
+      <span class="publication-tag">CCF-A</span>
+      <span class="publication-tag">CORE-A*</span>
     </p>
   </li>
   <li class="publication-item">
     <h3 class="publication-title"><a href="https://ieeexplore.ieee.org/document/9206952" rel="noopener noreferrer" target="_blank">Generating Chinese Poetry from Images via Concrete and Abstract Information</a></h3>
     <p class="publication-authors"><strong>Yusen Liu</strong>, Dayiheng Liu, Jiancheng Lv, Yongsheng Sang</p>
     <p class="publication-venue" data-en="2020 International Joint Conference on Neural Networks (IJCNN), 1–8, 2020." data-zh="2020 国际神经网络联合会议（IJCNN），1–8页，2020年。">2020 International Joint Conference on Neural Networks (IJCNN), 1–8, 2020.</p>
-    <p class="publication-links">
-      <a href="https://ieeexplore.ieee.org/document/9206952" rel="noopener noreferrer" target="_blank" data-en="Paper" data-zh="论文">Paper</a>
-      <a href="https://arxiv.org/abs/2003.10773" rel="noopener noreferrer" target="_blank">arXiv</a>
-      <a href="/bib/image-poetry.bib">BibTeX</a>
+    <p class="publication-tags" aria-label="Publication attributes">
+      <span class="publication-tag">First Author</span>
+      <span class="publication-tag">CCF-C</span>
+      <span class="publication-tag">CORE-B</span>
     </p>
   </li>
 </ol>
