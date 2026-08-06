@@ -9,16 +9,6 @@
     {{- with .affiliation }}<p class="profile-card-affiliation">{{ . }}</p>{{- end }}
 
     {{- partial "social_icons.html" . -}}
-
-    {{- with .buttons }}
-    <nav class="buttons" aria-label="Profile sections">
-      {{- range . }}
-      <a class="button" href="{{ trim .url " " }}" title="{{ .name }}">
-        <span class="button-inner">{{ .name }}</span>
-      </a>
-      {{- end }}
-    </nav>
-    {{- end }}
   </div>
 </aside>
 {{- end }}

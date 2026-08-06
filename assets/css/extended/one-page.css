@@ -42,10 +42,12 @@ body.home-page {
 }
 
 .header .site-name {
+  min-width: max-content;
   color: var(--primary);
   font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.015em;
+  white-space: nowrap;
 }
 
 .header #menu {
@@ -151,36 +153,6 @@ body.home-page {
   height: 28px;
 }
 
-.profile-card .buttons {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-  max-width: none;
-  margin-top: 18px;
-}
-
-.profile-card .button {
-  margin: 0;
-  padding: 9px 12px;
-  border-radius: var(--radius);
-  color: var(--primary);
-  background: var(--tertiary);
-  font-size: 14px;
-  transition: background-color 0.15s ease, transform 0.1s ease;
-}
-
-.profile-card .button:hover {
-  background: rgb(198, 198, 198);
-}
-
-.profile-card .button:active {
-  transform: scale(0.98);
-}
-
-.profile-card .button-inner {
-  padding: 0;
-}
-
 .academic-content {
   min-width: 0;
   max-width: none;
@@ -247,10 +219,8 @@ body.home-page {
 }
 
 .academic-content li {
-  margin: 0 0 12px;
-  padding: 16px 18px;
-  border-radius: var(--radius);
-  background: var(--theme);
+  margin: 0;
+  padding: 0 0 14px;
 }
 
 .academic-content strong {
@@ -267,9 +237,8 @@ body.home-page {
 #education + p,
 #publications + p,
 #services + p {
-  padding: 18px 20px;
-  border-radius: var(--radius);
-  background: var(--theme);
+  padding: 0;
+  background: transparent;
 }
 
 .footer {
@@ -323,15 +292,6 @@ body.home-page {
     margin-inline: auto;
   }
 
-  .profile-card .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .profile-card .button {
-    padding-inline: 14px;
-  }
 }
 
 @media (max-width: 520px) {
@@ -340,7 +300,15 @@ body.home-page {
   }
 
   .header #menu a {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .header #menu {
+    margin-left: 12px;
+  }
+
+  .header #menu li + li {
+    margin-inline-start: 10px;
   }
 
   .home-page .main {

@@ -57,13 +57,6 @@ params:
       - Deep Learning
       - Natural Language Generation
       - Multimodal Learning
-    buttons:
-      - name: News
-        url: "#news"
-      - name: Publications
-        url: "#publications"
-      - name: Services
-        url: "#services"
   socialIcons:
     - name: Email
       title: Email
