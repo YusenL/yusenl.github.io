@@ -13,6 +13,7 @@
   --footer-height: 60px;
   --radius: 8px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --accent: rgb(45, 62, 80);
   --theme: rgb(255, 255, 255);
   --entry: rgb(255, 255, 255);
   --primary: rgb(30, 30, 30);
@@ -72,8 +73,8 @@ body.home-page {
 }
 
 .header #menu a.active {
-  border-bottom: 1px solid var(--primary);
-  color: var(--primary);
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 .nav-actions {
@@ -136,6 +137,10 @@ body.dark .theme-toggle .sun-icon,
 
 body.dark .header {
   background: rgba(29, 30, 32, 0.94);
+}
+
+body.dark {
+  --accent: rgb(157, 177, 196);
 }
 
 body.dark .profile-card {
@@ -263,7 +268,7 @@ body.dark .profile-card-image {
   left: 0;
   width: 2px;
   border-radius: 2px;
-  background: var(--primary);
+  background: var(--accent);
   content: "";
 }
 
