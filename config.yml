@@ -42,7 +42,7 @@ menu:
         zh: 服务
 
 params:
-  description: "The personal research website of Yusen Liu, a PhD student in Computer Science at the University of Technology Sydney."
+  description: "The personal research website of Yusen Liu, a Ph.D. student in Computer Science at the University of Technology Sydney, working on time-series modeling, multimodal learning, and data-centric AI."
   author: Yusen Liu
   DateFormat: "January 2006"
   defaultTheme: light
@@ -61,23 +61,28 @@ params:
   profileMode:
     enabled: true
     title: Yusen Liu
-    position: PhD Student
-    positionZh: 博士研究生
-    affiliation: University of Technology Sydney
-    affiliationZh: 悉尼科技大学
-    subtitle: "I am a PhD student in Computer Science at the University of Technology Sydney. My research focuses on deep learning for language and multimodal generation."
+    position: Ph.D. Student in Computer Science
+    positionZh: 计算机科学博士研究生
+    affiliation: School of Computer Science, UTS
+    affiliationZh: 悉尼科技大学计算机科学学院
+    location: Sydney, Australia
+    locationZh: 澳大利亚悉尼
+    subtitle: "I am a Ph.D. student in Computer Science at the University of Technology Sydney. My research focuses on time-series modeling, multimodal learning, and data-centric AI."
     imageUrl: profile.svg
     imageWidth: 160
     imageHeight: 160
     imageTitle: Yusen Liu
     researchInterests:
-      - Deep Learning
-      - Natural Language Generation
+      - Artificial Intelligence
+      - Data Mining
+      - Internet of Things
+      - Time-Series Modeling
       - Multimodal Learning
+      - AI for Dentistry
   socialIcons:
     - name: Email
       title: Email
-      url: "mailto:liuyusen96@gmail.com"
+      url: "mailto:yusen.liu@uts.edu.au"
     - name: Google Scholar
       title: Google Scholar
       url: "https://scholar.google.com/citations?user=K_Fy2OUAAAAJ"
@@ -89,6 +94,7 @@ params:
     sameAs:
       - "https://github.com/YusenL"
       - "https://scholar.google.com/citations?user=K_Fy2OUAAAAJ"
+      - "https://orcid.org/0009-0000-0731-9215"
   assets:
     disableScrollBarStyle: true
     favicon: favicon.svg

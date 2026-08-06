@@ -208,11 +208,16 @@ body.dark .profile-card-image {
   font-weight: 500;
 }
 
-.profile-card-affiliation {
+.profile-card-affiliation,
+.profile-card-location {
   margin: 6px 0 0;
   color: var(--secondary);
   font-size: 13px;
   line-height: 1.5;
+}
+
+.profile-card-location {
+  margin-top: 3px;
 }
 
 .profile-card .social-icons {
