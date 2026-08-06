@@ -129,17 +129,40 @@
       });
     });
 
-    const sections = navLinks
-      .map((link) => document.querySelector(link.getAttribute("href")))
-      .filter(Boolean);
-    if ("IntersectionObserver" in window && sections.length) {
-      const observer = new IntersectionObserver((entries) => {
-        const visible = entries.find((entry) => entry.isIntersecting);
-        if (!visible) return;
-        setActiveLink(window.scrollY < 80 ? "#about-me" : `#${visible.target.id}`);
-      }, { rootMargin: "-20% 0px -70% 0px", threshold: 0 });
-      sections.forEach((section) => observer.observe(section));
-    }
+    const sectionLinks = navLinks
+      .map((link) => ({ link, section: document.querySelector(link.getAttribute("href")) }))
+      .filter(({ section }) => Boolean(section));
+    const updateActiveFromScroll = () => {
+      if (!sectionLinks.length) return;
+      const headerHeight = document.querySelector(".header")?.offsetHeight || 60;
+      const scrollPaddingTop = Number.parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      const scrollMarginTop = Number.parseFloat(getComputedStyle(sectionLinks[0].section).scrollMarginTop) || 0;
+      const activationLine = Math.max(headerHeight + 32, scrollPaddingTop + scrollMarginTop + 2);
+      let activeHash = sectionLinks[0].link.getAttribute("href");
+
+      sectionLinks.forEach(({ link, section }) => {
+        if (section.getBoundingClientRect().top <= activationLine) {
+          activeHash = link.getAttribute("href");
+        }
+      });
+
+      const atPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atPageEnd) activeHash = sectionLinks[sectionLinks.length - 1].link.getAttribute("href");
+      setActiveLink(activeHash);
+    };
+    let scrollUpdateQueued = false;
+    const queueActiveUpdate = () => {
+      if (scrollUpdateQueued) return;
+      scrollUpdateQueued = true;
+      window.requestAnimationFrame(() => {
+        updateActiveFromScroll();
+        scrollUpdateQueued = false;
+      });
+    };
+
+    window.addEventListener("scroll", queueActiveUpdate, { passive: true });
+    window.addEventListener("resize", queueActiveUpdate);
+    queueActiveUpdate();
 
     applyLanguage(language, false);
     updateThemeLabel();
