@@ -247,7 +247,7 @@ body.dark .profile-card-image {
   padding-left: 16px;
   color: var(--primary);
   font-family: var(--font-sans);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.015em;
 }
@@ -492,7 +492,7 @@ body.dark .profile-card-image {
 
   .academic-content h2 {
     margin-top: 48px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .academic-content p,
