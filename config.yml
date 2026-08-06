@@ -10,21 +10,18 @@ disableKinds: [taxonomy, term, RSS]
 
 menu:
   main:
-    - name: Research Interests
-      url: "#research-interests"
-      weight: 1
     - name: News
       url: "#news"
-      weight: 2
+      weight: 1
     - name: Publications
       url: "#publications"
-      weight: 3
+      weight: 2
     - name: Services
       url: "#services"
-      weight: 4
+      weight: 3
 
 params:
-  description: "The personal research website of Yusen Liu, a researcher based in Sydney."
+  description: "The personal research website of Yusen Liu, a PhD student in Computer Science at the University of Technology Sydney."
   author: Yusen Liu
   DateFormat: "January 2006"
   defaultTheme: light
@@ -43,18 +40,16 @@ params:
   profileMode:
     enabled: true
     title: Yusen Liu
-    subtitle: "A researcher based in Sydney, working on reliable methods for complex real-world systems."
+    subtitle: "I am a PhD student in Computer Science at the University of Technology Sydney. My research focuses on deep learning for language and multimodal generation."
     imageUrl: profile.svg
     imageWidth: 160
     imageHeight: 160
     imageTitle: Yusen Liu
     researchInterests:
-      - Machine Learning
-      - Optimization
-      - Applied AI
+      - Deep Learning
+      - Natural Language Generation
+      - Multimodal Learning
     buttons:
-      - name: Research Interests
-        url: "#research-interests"
       - name: News
         url: "#news"
       - name: Publications
@@ -67,7 +62,7 @@ params:
       url: "mailto:liuyusen96@gmail.com"
     - name: Google Scholar
       title: Google Scholar
-      url: "https://scholar.google.com/citations?view_op=search_authors&mauthors=Yusen+Liu"
+      url: "https://scholar.google.com/citations?user=K_Fy2OUAAAAJ"
     - name: GitHub
       title: GitHub
       url: "https://github.com/YusenL"
@@ -75,6 +70,7 @@ params:
     publisherType: Person
     sameAs:
       - "https://github.com/YusenL"
+      - "https://scholar.google.com/citations?user=K_Fy2OUAAAAJ"
   assets:
     disableScrollBarStyle: true
     favicon: favicon.svg

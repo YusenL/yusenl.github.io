@@ -1,6 +1,6 @@
 ---
 title: Yusen Liu
-description: The personal research website of Yusen Liu, a researcher based in Sydney.
+description: The personal research website of Yusen Liu, a PhD student in Computer Science at the University of Technology Sydney.
 robotsNoIndex: true
 ---
 
