@@ -13,7 +13,7 @@
   --footer-height: 60px;
   --radius: 8px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-  --accent: rgb(45, 62, 80);
+  --accent: rgb(36, 52, 68);
   --theme: rgb(255, 255, 255);
   --entry: rgb(255, 255, 255);
   --primary: rgb(30, 30, 30);
@@ -140,7 +140,7 @@ body.dark .header {
 }
 
 body.dark {
-  --accent: rgb(157, 177, 196);
+  --accent: rgb(145, 166, 186);
 }
 
 body.dark .profile-card {
