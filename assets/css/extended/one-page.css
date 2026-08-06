@@ -339,8 +339,7 @@ body.dark .profile-card-image {
 }
 
 .academic-content .publication-title a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: var(--accent);
 }
 
 .academic-content .publication-authors,
@@ -470,13 +469,16 @@ body.dark .academic-content .publication-tag.tag-journal {
 
 .academic-content .service-list a {
   color: var(--content);
+  text-decoration: none;
 }
 
 .academic-content a {
   color: var(--primary);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
+}
+
+.academic-content a:hover {
+  color: var(--accent);
 }
 
 .academic-content .about-text a {
