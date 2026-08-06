@@ -479,6 +479,15 @@ body.dark .academic-content .publication-tag.tag-journal {
   text-underline-offset: 3px;
 }
 
+.academic-content .about-text a {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.academic-content .about-text a:hover {
+  color: var(--accent);
+}
+
 #research-interests + p,
 #publications + p,
 #services + p {
