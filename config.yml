@@ -61,14 +61,14 @@ params:
   profileMode:
     enabled: true
     title: Yusen Liu
-    position: Ph.D. Student in Computer Science
-    positionZh: 计算机科学博士研究生
-    affiliation: School of Computer Science, UTS
-    affiliationZh: 悉尼科技大学计算机科学学院
+    position: Ph.D. Student
+    positionZh: 博士研究生
+    affiliation: University of Technology Sydney
+    affiliationZh: 悉尼科技大学
     location: Sydney, Australia
     locationZh: 澳大利亚悉尼
     subtitle: "I am a Ph.D. student in Computer Science at the University of Technology Sydney. My research focuses on time-series data mining, multimodal learning, and AI for dentistry."
-    imageUrl: profile.svg
+    imageUrl: profile.png
     imageWidth: 160
     imageHeight: 160
     imageTitle: Yusen Liu

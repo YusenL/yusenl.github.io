@@ -2,14 +2,13 @@
 <aside class="profile-sidebar" aria-label="Profile">
   <div class="profile-card">
     {{- with .imageUrl }}
-    <img class="profile-card-image" draggable="false" src="{{ . | relURL }}" alt="{{ site.Params.profileMode.imageTitle | default site.Title }}" width="{{ site.Params.profileMode.imageWidth | default 150 }}" height="{{ site.Params.profileMode.imageHeight | default 150 }}">
+    <div class="profile-card-image">
+      <img draggable="false" src="{{ . | relURL }}" alt="{{ site.Params.profileMode.imageTitle | default site.Title }}" width="{{ site.Params.profileMode.imageWidth | default 150 }}" height="{{ site.Params.profileMode.imageHeight | default 150 }}">
+    </div>
     {{- end }}
-    <h1>{{ .title | default site.Title | markdownify }}</h1>
     {{- with .position }}<p class="profile-card-position" data-en="{{ . }}" data-zh="{{ site.Params.profileMode.positionZh | default . }}">{{ . }}</p>{{- end }}
     {{- with .affiliation }}<p class="profile-card-affiliation" data-en="{{ . }}" data-zh="{{ site.Params.profileMode.affiliationZh | default . }}">{{ . }}</p>{{- end }}
     {{- with .location }}<p class="profile-card-location" data-en="{{ . }}" data-zh="{{ site.Params.profileMode.locationZh | default . }}">{{ . }}</p>{{- end }}
-
-    {{- partial "social_icons.html" . -}}
   </div>
 </aside>
 {{- end }}
