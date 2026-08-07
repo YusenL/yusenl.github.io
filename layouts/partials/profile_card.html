@@ -9,7 +9,7 @@
     <h1>{{ .title | default site.Title | markdownify }}</h1>
     {{- with .position }}<p class="profile-card-position" data-en="{{ . }}" data-zh="{{ site.Params.profileMode.positionZh | default . }}">{{ . }}</p>{{- end }}
     {{- with .affiliation }}<p class="profile-card-affiliation" data-en="{{ . }}" data-zh="{{ site.Params.profileMode.affiliationZh | default . }}">{{ . }}</p>{{- end }}
-    {{- with .location }}<p class="profile-card-location"><span class="profile-location-marker" aria-hidden="true">🌏</span><span data-en="{{ . }}" data-zh="{{ site.Params.profileMode.locationZh | default . }}">{{ . }}</span></p>{{- end }}
+    {{- with .location }}<p class="profile-card-location"><span class="profile-location-marker" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span data-en="{{ . }}" data-zh="{{ site.Params.profileMode.locationZh | default . }}">{{ . }}</span></p>{{- end }}
 
     {{- partial "social_icons.html" . -}}
   </div>
