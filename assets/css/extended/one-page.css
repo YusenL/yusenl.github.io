@@ -14,6 +14,7 @@
   --radius: 8px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --accent: rgb(36, 52, 68);
+  --link: rgb(90, 108, 126);
   --theme: rgb(255, 255, 255);
   --entry: rgb(255, 255, 255);
   --primary: rgb(30, 30, 30);
@@ -141,6 +142,7 @@ body.dark .header {
 
 body.dark {
   --accent: rgb(145, 166, 186);
+  --link: rgb(164, 182, 199);
 }
 
 body.dark .profile-card {
@@ -468,26 +470,26 @@ body.dark .academic-content .publication-tag.tag-journal {
 }
 
 .academic-content .service-list a {
-  color: var(--accent);
+  color: var(--link);
   box-shadow: none;
   text-decoration: none;
 }
 
 .academic-content a {
-  color: var(--accent);
+  color: var(--link);
   border-bottom: 0;
   box-shadow: none;
   text-decoration: none;
-  transition: opacity 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 .academic-content a:hover {
-  opacity: 0.72;
+  color: var(--accent);
 }
 
 .academic-content a:focus-visible {
   border-radius: 2px;
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--link);
   outline-offset: 2px;
 }
 
