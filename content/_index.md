@@ -85,7 +85,7 @@ robotsNoIndex: true
     <p class="publication-tags" aria-label="Publication attributes">
       <span class="publication-tag tag-author">Co-First Author</span>
       <span class="publication-tag tag-journal">SCI-Q2</span>
-      <span class="publication-tag tag-journal">JCR-Q2</span>
+      <span class="publication-tag tag-journal">JCR-Q1</span>
     </p>
   </li>
   <li class="publication-item">
