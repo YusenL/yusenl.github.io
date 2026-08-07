@@ -14,7 +14,7 @@
   --radius: 8px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --accent: rgb(36, 52, 68);
-  --link: rgb(90, 108, 126);
+  --link: rgb(72, 92, 112);
   --theme: rgb(255, 255, 255);
   --entry: rgb(255, 255, 255);
   --primary: rgb(30, 30, 30);
@@ -164,8 +164,8 @@ body.dark .profile-card-image {
 
 .academic-layout {
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
-  gap: clamp(44px, 6vw, 72px);
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: clamp(40px, 5vw, 60px);
   align-items: start;
 }
 
@@ -186,22 +186,20 @@ body.dark .profile-card-image {
 
 .profile-card-image {
   display: block;
-  width: 148px;
-  height: 148px;
+  width: 126px;
+  height: 126px;
   margin: 0 auto 20px;
-  overflow: hidden;
-  border: 1px solid var(--tertiary);
-  border-radius: 50%;
-  background: var(--theme);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .profile-card-image img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: scale(1.55);
-  transform-origin: 50% 42%;
+  object-fit: contain;
+  transform: none;
 }
 
 .profile-card h1 {
@@ -226,6 +224,10 @@ body.dark .profile-card-image {
   color: var(--secondary);
   font-size: 13px;
   line-height: 1.5;
+}
+
+.profile-card-affiliation {
+  white-space: nowrap;
 }
 
 .profile-card-location {
@@ -468,10 +470,18 @@ body.dark .academic-content .publication-tag.tag-journal {
   padding-bottom: 10px;
 }
 
+.academic-content .news-list li > strong:first-child {
+  display: inline-block;
+  width: 96px;
+  white-space: nowrap;
+}
+
 .academic-content .news-celebration {
   display: inline-block;
+  width: 18px;
   margin: 0 3px;
   font-size: 0.9em;
+  text-align: center;
 }
 
 .academic-content .service-heading {
@@ -624,8 +634,8 @@ body.dark .academic-content .publication-tag.tag-journal {
   }
 
   .profile-card-image {
-    width: 124px;
-    height: 124px;
+    width: 112px;
+    height: 112px;
   }
 
   .profile-card h1 {
