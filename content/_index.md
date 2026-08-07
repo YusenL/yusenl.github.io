@@ -58,7 +58,7 @@ robotsNoIndex: true
     </p>
   </li>
   <li class="publication-item">
-    <h3 class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S0031320326000920" rel="noopener noreferrer" target="_blank">SaURL-TS: A Self-Adaptive Framework for Unsupervised Time Series Representation Learning</a></h3>
+    <h3 class="publication-title">SaURL-TS: A Self-Adaptive Framework for Unsupervised Time Series Representation Learning</h3>
     <p class="publication-authors"><strong>Yusen Liu</strong>, Zhichen Lai, Hua Lu, Xu Cheng, Tianqing Zhu, Xiufeng Liu, Huan Huo</p>
     <p class="publication-venue"><em>Pattern Recognition</em> <strong><em>(PR)</em></strong>, 2026.</p>
     <p class="publication-tags" aria-label="Publication attributes">
@@ -69,7 +69,7 @@ robotsNoIndex: true
     </p>
   </li>
   <li class="publication-item">
-    <h3 class="publication-title"><a href="https://doi.org/10.1007/978-981-96-8183-9_14" rel="noopener noreferrer" target="_blank">Causal Discovery with Inverted Self-Attention for Multivariate Time Series</a></h3>
+    <h3 class="publication-title">Causal Discovery with Inverted Self-Attention for Multivariate Time Series</h3>
     <p class="publication-authors"><strong>Yusen Liu</strong>, Yong Wang, Yifan Yin, Tianqing Zhu, Xiufeng Liu, Huan Huo</p>
     <p class="publication-venue"><em>Pacific-Asia Conference on Knowledge Discovery and Data Mining</em> <strong><em>(PAKDD)</em></strong>, 2025.</p>
     <p class="publication-tags" aria-label="Publication attributes">
@@ -79,8 +79,8 @@ robotsNoIndex: true
     </p>
   </li>
   <li class="publication-item">
-    <h3 class="publication-title"><a href="https://doi.org/10.1109/JSEN.2025.3547698" rel="noopener noreferrer" target="_blank">FreqICE: Efficient Blade Icing Detection on Wind Turbines via Frequency Learning</a></h3>
-    <p class="publication-authors">Zhichen Lai, <strong>Yusen Liu</strong>, Jingwen Cai, Xu Cheng, Xiufeng Liu</p>
+    <h3 class="publication-title">FreqICE: Efficient Blade Icing Detection on Wind Turbines via Frequency Learning</h3>
+    <p class="publication-authors">Zhichen Lai*, <strong>Yusen Liu*</strong>, Jingwen Cai, Xu Cheng, Xiufeng Liu</p>
     <p class="publication-venue"><em>IEEE Sensors Journal</em> <strong><em>(JSEN)</em></strong>, 2025.</p>
     <p class="publication-tags" aria-label="Publication attributes">
       <span class="publication-tag tag-author">Co-First Author</span>
@@ -89,7 +89,7 @@ robotsNoIndex: true
     </p>
   </li>
   <li class="publication-item">
-    <h3 class="publication-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/7100" rel="noopener noreferrer" target="_blank">Deep Poetry: A Chinese Classical Poetry Generation System</a></h3>
+    <h3 class="publication-title">Deep Poetry: A Chinese Classical Poetry Generation System</h3>
     <p class="publication-authors"><strong>Yusen Liu</strong>, Dayiheng Liu, Jiancheng Lv</p>
     <p class="publication-venue"><em>AAAI Conference on Artificial Intelligence</em> <strong><em>(AAAI)</em></strong>, 2020.</p>
     <p class="publication-tags" aria-label="Publication attributes">
