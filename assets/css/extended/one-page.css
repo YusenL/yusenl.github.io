@@ -468,17 +468,27 @@ body.dark .academic-content .publication-tag.tag-journal {
 }
 
 .academic-content .service-list a {
-  color: var(--content);
+  color: var(--accent);
+  box-shadow: none;
   text-decoration: none;
 }
 
 .academic-content a {
-  color: var(--primary);
+  color: var(--accent);
+  border-bottom: 0;
+  box-shadow: none;
   text-decoration: none;
+  transition: opacity 0.15s ease;
 }
 
 .academic-content a:hover {
-  color: var(--accent);
+  opacity: 0.72;
+}
+
+.academic-content a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .academic-content .about-text a {
