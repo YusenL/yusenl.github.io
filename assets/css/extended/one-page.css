@@ -204,8 +204,17 @@ body.dark .profile-card-image {
   transform-origin: 50% 42%;
 }
 
-.profile-card-position {
+.profile-card h1 {
   margin: 0;
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.profile-card-position {
+  margin: 10px 0 0;
   color: var(--content);
   font-size: 15px;
   font-weight: 500;
@@ -221,6 +230,34 @@ body.dark .profile-card-image {
 
 .profile-card-location {
   margin-top: 3px;
+}
+
+.profile-location-marker {
+  margin-right: 3px;
+  font-size: 11px;
+  vertical-align: 1px;
+}
+
+.profile-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.profile-card .social-icons a {
+  display: inline-flex;
+  padding: 5px;
+  color: var(--primary);
+}
+
+.profile-card .social-icons a:hover {
+  color: var(--secondary);
+}
+
+.profile-card .social-icons svg {
+  width: 28px;
+  height: 28px;
 }
 
 .academic-content {
@@ -431,6 +468,12 @@ body.dark .academic-content .publication-tag.tag-journal {
   padding-bottom: 10px;
 }
 
+.academic-content .news-celebration {
+  display: inline-block;
+  margin: 0 3px;
+  font-size: 0.9em;
+}
+
 .academic-content .service-heading {
   margin: 18px 0 8px;
   color: var(--accent);
@@ -583,6 +626,10 @@ body.dark .academic-content .publication-tag.tag-journal {
   .profile-card-image {
     width: 124px;
     height: 124px;
+  }
+
+  .profile-card h1 {
+    font-size: 26px;
   }
 
   .academic-content h2 {
