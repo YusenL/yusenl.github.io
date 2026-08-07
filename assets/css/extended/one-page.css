@@ -200,8 +200,8 @@ body.dark .profile-card-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: translateY(-2px) scale(1.32);
-  transform-origin: 50% 32%;
+  transform: scale(1.14);
+  transform-origin: 50% 38%;
 }
 
 .profile-card h1 {
@@ -504,11 +504,11 @@ body.dark .academic-content .publication-tag.tag-journal {
 }
 
 .academic-content .news-celebration svg {
-  width: 14px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
+  stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
