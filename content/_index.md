@@ -93,7 +93,7 @@ robotsNoIndex: true
     <p class="publication-authors"><strong>Yusen Liu</strong>, Dayiheng Liu, Jiancheng Lv</p>
     <p class="publication-venue"><em>AAAI Conference on Artificial Intelligence</em> <strong><em>(AAAI)</em></strong>, 2020.</p>
     <p class="publication-tags" aria-label="Publication attributes">
-      <span class="publication-tag tag-author">Co-First Author</span>
+      <span class="publication-tag tag-author">First Author</span>
       <span class="publication-tag tag-ccf">CCF-A</span>
       <span class="publication-tag tag-core">CORE-A*</span>
     </p>
